@@ -56,7 +56,7 @@ const Results: React.FC<ResultsProps> = ({ data }) => {
           Top Recommended Destinations
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {data.recommendations.map((dest, i) => (
+          {data.recommendations.map((dest) => (
             <div key={dest.id} className="relative group rounded-2xl overflow-hidden bg-white shadow-xl border border-orange-100 hover:border-orange-400 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="h-48 bg-gradient-to-br from-orange-100 to-rose-100 p-6 flex flex-col justify-end relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-4">
